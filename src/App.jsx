@@ -13,7 +13,7 @@ function App() {
         <div className="h-full flex flex-col ">
           <div className="border-b border-white/30 h-fit w-full">
             <img
-              className="mx-auto my-[30px] sm:my-6 w-6 sm:w-fit"
+              className="mx-auto my-[21.2px] sm:my-6 w-3 sm:w-fit"
               src={logo}
               alt=""
             />
@@ -23,7 +23,7 @@ function App() {
           </div> */}
         </div>
         <div className="h-full border-white/30 border-x flex flex-col justify-between">
-          <h1 className="py-6 w-full h-fit text-center text-2xl border-b border-white/30">
+          <h1 className="py-3 sm:py-6 w-full h-fit text-center text-lg sm:text-2xl border-b border-white/30">
             HUBLOT
           </h1>
           {/* main content */}
@@ -77,7 +77,7 @@ function App() {
         <div className="h-full flex flex-col justify-between">
           <div className="border-b border-white/30 h-fit w-full">
             <svg
-              className="mx-auto my-7"
+              className="w-3 sm:w-full mx-auto my-3.5 sm:my-7"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="24"
