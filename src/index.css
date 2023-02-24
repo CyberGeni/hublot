@@ -2,4 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/pp-fragment');
+@font-face {
+  font-family: "PP Fragment Glare";
+  src: url("../src/assets/pp_fragment/PPFragment-GlareRegular.otf");
+}
+@font-face {
+  font-family: "PP Fragment Sans";
+  src: url("../src/assets/pp_fragment/PPFragment-SansRegular.otf");
+}
+@font-face {
+  font-family: "PP Fragment Serif";
+  src: url("../src/assets/pp_fragment/PPFragment-SerifRegular.otf");
+}
+@font-face {
+  font-family: "PP Fragment Text";
+  src: url("../src/assets/pp_fragment/PPFragment-TextRegular.otf");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
