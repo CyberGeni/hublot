@@ -20,6 +20,7 @@ function SleekHover() {
       description: "The highest standard in watch making",
       image: green,
     },
+
     {
       id: 2,
       name: "Toubillion watches",
@@ -51,27 +52,42 @@ function SleekHover() {
       </p>
       <section className="grid grid-cols-2 gap-8">
         <div className="relative ">
-        {watches.map((watch, index) => (
           <div key={index} className="relative">
-            {/* <img className="w-4/5 mx-auto absolute inset-0" src={green} alt="" />
+            <img className="w-4/5 mx-auto absolute inset-0" src={green} alt="" />
             <img className="w-4/5 mx-auto absolute inset-0" src={brown} alt="" />
             <img className="w-4/5 mx-auto absolute inset-0" src={purple} alt="" />
-            <img className="w-4/5 mx-auto absolute inset-0" src={blue} alt="" /> */}
-            <img className={`absolute inset-0 w-4/5 mx-auto`} src={watch.image} alt="" />
+            <img className="w-4/5 mx-auto absolute inset-0" src={blue} alt="" />
+            {/* <img className={`absolute inset-0 w-4/5 mx-auto`} src={watch.image} alt="" /> */}
           </div>
-        ))}
+      
         </div>
         <div 
         onMouseOver={handleMouseEnter}
         className="border-l border-white/30">
-          {watches.map((watch, index) => (
             <div key={index} className="h-24 flex flex-col justify-center border-b border-white/30 p-5">
               <h1 className="text-[#A0A0AB] text-2xl font-serif">
                 {watch.name}
               </h1>
               <p className={`absolute opacity-0 ${hoveredIndex === index ? "relative opacity-100 " : ""}`}>{watch.description}</p>
             </div>
-          ))}
+            <div key={index} className="h-24 flex flex-col justify-center border-b border-white/30 p-5">
+              <h1 className="text-[#A0A0AB] text-2xl font-serif">
+                {watch.name}
+              </h1>
+              <p className={`absolute opacity-0 ${hoveredIndex === index ? "relative opacity-100 " : ""}`}>{watch.description}</p>
+            </div>
+            <div key={index} className="h-24 flex flex-col justify-center border-b border-white/30 p-5">
+              <h1 className="text-[#A0A0AB] text-2xl font-serif">
+                {watch.name}
+              </h1>
+              <p className={`absolute opacity-0 ${hoveredIndex === index ? "relative opacity-100 " : ""}`}>{watch.description}</p>
+            </div>
+            <div key={index} className="h-24 flex flex-col justify-center border-b border-white/30 p-5">
+              <h1 className="text-[#A0A0AB] text-2xl font-serif">
+                {watch.name}
+              </h1>
+              <p className={`absolute opacity-0 ${hoveredIndex === index ? "relative opacity-100 " : ""}`}>{watch.description}</p>
+            </div>
         </div>
       </section>
   
